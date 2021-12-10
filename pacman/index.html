@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini PacMan</title>
+    <link rel="stylesheet" href="./assets/css/pacman.css">
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/world1.js"></script>
+    <script src="./assets/js/pacman.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="pacman-world"></div>
+        <div id="puntaje">
+            <p>Puntaje Total: 0 pts
+        </div>
+    </div>
+    <script>
+        $().ready(() => {
+            $('body').keydown(e => mover(e.keyCode, false));
+            inicializarJuego();
+            // actualizarMundo(true);
+            setInterval(() => actualizarMundo(true), 300);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Serpiente</title>
+    <link rel="stylesheet" href="./assets/css/serpiente.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/world1.js"></script>
+    <script src="./assets/js/serpiente.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="world"></div>
+        <div id="puntaje">
+            <p>Puntaje Total: 0 pts
+        </div>
+    </div>
+    <script>
+        $().ready(() => {
+            $('body').keydown(e => mover(e.keyCode, false));
+            // actualizarMundo(true);
+            let interval = setInterval(() => actualizarMundo(true), 200);
+            inicializarJuego(interval);
+        })
+    </script>
+</body>
+</html>

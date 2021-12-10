@@ -1,0 +1,145 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#main {
+    text-align: center;
+}
+
+#world {
+    color: white;
+    border: 5px solid #FFFF00;
+    display: inline-block;
+    padding: 10px;  
+    height: auto;
+}
+
+#puntaje {
+    color: white;
+    border: 2px solid white;
+    padding: 50px;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.row {
+    /* background-color: blue; */
+    display: block;
+    height: 20px;
+}
+
+div.empty {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+div.odd {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-color: beige;
+}
+
+div.pair {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-color: brown;
+}
+
+div.brick {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    display: inline-block;
+}
+
+div.comida-2 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/raton_animada_1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.comida-3 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/rana_animada_1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.comida-4 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/rana_animada_2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.comida-5 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/raton_animada_2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.comida-6 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/raton_animada_3.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.snake {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/pacman_animado.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.snake.tail {
+    height: 20px;
+    width: 20px;
+    background-image: none;
+    background-color: rgb(0, 183, 255);
+    display: inline-block;
+}
+
+div.snake.up{
+    transform: rotate(90deg);
+}
+
+div.snake.down{
+    transform: rotate(270deg);
+}
+
+div.snake.left{
+    transform: rotate(0deg);
+}
+
+div.snake.right{
+    transform: rotate(180deg);
+}

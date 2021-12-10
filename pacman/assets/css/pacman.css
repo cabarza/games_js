@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#main {
+    text-align: center;
+}
+
+#pacman-world {
+    color: white;
+    border: 5px solid #FFFF00;
+    display: inline-block;
+    padding: 10px;  
+    height: auto;
+}
+
+#puntaje {
+    color: white;
+    border: 2px solid white;
+    padding: 50px;
+    display: block;
+    height: 25px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.row {
+    /* background-color: blue; */
+    display: block;
+    height: 20px;
+}
+
+div.empty {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+div.brick {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    display: inline-block;
+}
+
+div.coin {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/ring_animado.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    display: inline-block;
+}
+
+div.pacman {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/pacman_animado.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+div.pacman.up{
+    transform: rotate(90deg);
+}
+
+div.pacman.down{
+    transform: rotate(270deg);
+}
+
+div.pacman.left{
+    transform: rotate(0deg);
+}
+
+div.pacman.right{
+    transform: rotate(180deg);
+}
+
+div.pacman2 {
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/pacman_animado_2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
